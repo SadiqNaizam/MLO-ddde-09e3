@@ -4,89 +4,87 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0PERCENT 100PERCENT; /* White */
+    --foreground: 210 20PERCENT 25PERCENT; /* Dark Blue-Gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0PERCENT 98PERCENT; /* Off-white */
+    --card-foreground: 210 20PERCENT 25PERCENT; /* Dark Blue-Gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0PERCENT 98PERCENT; /* Off-white */
+    --popover-foreground: 210 20PERCENT 25PERCENT; /* Dark Blue-Gray */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 200 100PERCENT 46PERCENT; /* Doraemon Blue: #00A0E9 */
+    --primary-foreground: 0 0PERCENT 100PERCENT; /* White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 20PERCENT 92PERCENT; /* Light Gray */
+    --secondary-foreground: 200 80PERCENT 35PERCENT; /* Darker Doraemon Blue */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20PERCENT 96PERCENT; /* Very Light Gray */
+    --muted-foreground: 210 20PERCENT 55PERCENT; /* Medium Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 51 100PERCENT 50PERCENT; /* Sunny Yellow: #FFD700 */
+    --accent-foreground: 210 20PERCENT 25PERCENT; /* Dark Blue-Gray (for text on yellow) */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 355 100PERCENT 45PERCENT; /* Doraemon Red: #E60012 */
+    --destructive-foreground: 0 0PERCENT 100PERCENT; /* White */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20PERCENT 90PERCENT; /* Light Gray */
+    --input: 210 20PERCENT 90PERCENT; /* Light Gray */
+    --ring: 200 100PERCENT 46PERCENT; /* Doraemon Blue (for focus) */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* Softly rounded corners */
 
-    --sidebar-background: 0 0% 98%;
+    --font-sans: "Nunito", "Baloo 2", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Colors - Light Theme */
+    --sidebar-background: 200 30PERCENT 96PERCENT; /* Very light blue */
+    --sidebar-foreground: 210 20PERCENT 25PERCENT; /* Dark Blue-Gray */
+    --sidebar-primary: 200 100PERCENT 46PERCENT; /* Doraemon Blue */
+    --sidebar-primary-foreground: 0 0PERCENT 100PERCENT; /* White */
+    --sidebar-accent: 51 100PERCENT 50PERCENT; /* Sunny Yellow */
+    --sidebar-accent-foreground: 210 20PERCENT 25PERCENT; /* Dark Blue-Gray */
+    --sidebar-border: 200 30PERCENT 88PERCENT; /* Light blue border */
+    --sidebar-ring: 200 100PERCENT 46PERCENT; /* Doraemon Blue */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 30PERCENT 15PERCENT; /* Dark Doraemon Blue-ish */
+    --foreground: 0 0PERCENT 95PERCENT; /* Light Gray/Off-white */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 30PERCENT 20PERCENT; /* Slightly lighter dark blue */
+    --card-foreground: 0 0PERCENT 95PERCENT;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 30PERCENT 20PERCENT;
+    --popover-foreground: 0 0PERCENT 95PERCENT;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 200 100PERCENT 60PERCENT; /* Brighter Doraemon Blue */
+    --primary-foreground: 210 30PERCENT 10PERCENT; /* Very Dark Blue */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 25PERCENT 30PERCENT; /* Medium dark blue */
+    --secondary-foreground: 0 0PERCENT 95PERCENT;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 25PERCENT 25PERCENT;
+    --muted-foreground: 210 15PERCENT 65PERCENT; /* Lighter gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 51 100PERCENT 60PERCENT; /* Brighter Yellow */
+    --accent-foreground: 210 30PERCENT 10PERCENT; /* Very Dark Blue */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 355 100PERCENT 60PERCENT; /* Brighter Red */
+    --destructive-foreground: 0 0PERCENT 95PERCENT;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 210 25PERCENT 35PERCENT; /* Darker border */
+    --input: 210 25PERCENT 35PERCENT;
+    --ring: 200 100PERCENT 60PERCENT; /* Brighter Doraemon Blue */
+
+    /* Sidebar Colors - Dark Theme */
+    --sidebar-background: 210 30PERCENT 12PERCENT; /* Very dark blue */
+    --sidebar-foreground: 0 0PERCENT 95PERCENT; /* Light Gray/Off-white */
+    --sidebar-primary: 200 100PERCENT 60PERCENT; /* Brighter Doraemon Blue */
+    --sidebar-primary-foreground: 210 30PERCENT 10PERCENT; /* Very Dark Blue */
+    --sidebar-accent: 51 100PERCENT 60PERCENT; /* Brighter Yellow */
+    --sidebar-accent-foreground: 210 30PERCENT 10PERCENT; /* Very Dark Blue */
+    --sidebar-border: 210 25PERCENT 25PERCENT; /* Darker border for sidebar */
+    --sidebar-ring: 200 100PERCENT 60PERCENT; /* Brighter Doraemon Blue */
   }
 }
 
@@ -97,5 +95,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Apply the themed font family to the body */
   }
 }
